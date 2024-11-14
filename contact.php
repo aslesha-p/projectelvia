@@ -21,6 +21,7 @@ $contactInfo = [
         'text' => 'Monday - Friday (9:00 AM to 5:00 PM)'
     ]
 ];
+
 ?>
 
 <!DOCTYPE html>
@@ -308,7 +309,8 @@ $contactInfo = [
 
             <div class="contact-body">
                 <div class="contact-form">
-                    <form action="process_contact.php" method="POST">
+                <form method="post" action="process_contact.php">
+
                         <div>
                             <input type="text" class="form-control" name="name" placeholder="Name" required>
                             <input type="email" class="form-control" name="email" placeholder="E-Mail ID" required>
